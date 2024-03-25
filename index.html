@@ -1,3 +1,16 @@
+<script>
+  // JavaScript
+  document.addEventListener("DOMContentLoaded", function() {
+    const divElement = document.getElementById("toggleColorDiv");
+    let isRed = true; // Initial color state
+    
+    divElement.addEventListener("mouseenter", function() {
+      // Toggles the div's color between red and blue on hover
+      this.style.backgroundColor = isRed ? 'blue' : 'red';
+      isRed = !isRed; // Toggle the state
+    });
+  });
+</script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
