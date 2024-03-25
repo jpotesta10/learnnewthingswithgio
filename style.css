@@ -1,3 +1,9 @@
+/* CSS */
+.color-div {
+  width: 100px;
+  height: 100px;
+  transition: background-color 0.5s; /* Optional: Adds a transition effect */
+}
 body, html {
     margin: 0;
     padding: 0;
