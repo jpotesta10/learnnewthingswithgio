@@ -29,5 +29,40 @@
         <p>&copy; 2024 Skill Swap Platform</p>
     </footer>
     <script src="script.js"></script>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Color Div</title>
+<style>
+  /* CSS */
+  .color-div {
+    width: 100px;
+    height: 100px;
+    background-color: red; /* Initial color */
+    transition: background-color 0.5s; /* Optional: Adds a transition effect */
+  }
+</style>
+</head>
+<body>
+
+<div id="toggleColorDiv" class="color-div"></div> <!-- Div element to change color -->
+
+<script>
+  // JavaScript
+  document.addEventListener("DOMContentLoaded", function() {
+    const divElement = document.getElementById("toggleColorDiv");
+    
+    divElement.addEventListener("click", function() {
+      // Toggles the div's color between red and blue
+      this.style.backgroundColor = this.style.backgroundColor === 'red' ? 'blue' : 'red';
+    });
+  });
+</script>
+
+</body>
+</html>
+
 </body>
 </html>
